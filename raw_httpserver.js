@@ -15,11 +15,19 @@ const server = http.createServer((req, resp) => {
         // access http://localhost:5000/about
         resp.end("<h1>About</h1>");
     } else if(req.url === '/good') {
+        // access http://localhost:5000/good
         fs.readFile(path.join(__dirname, 'public', 'good.html'), (err, content) => {
             if(err) throw err;
             resp.writeHead(200, {"Content-Type": "text/html" });
             resp.end(content);
         });
+    } else if(req.url === '/api/users') {
+        const users = [
+            {name: "Bob Smith", age: 40},
+            {name: "John Doe", age:30}
+        ];
+        resp.writeHead(200, {"Content-Type": "application/json" });
+        resp.end(JSON.stringify(users));
     } else {
         resp.writeHead(200, {"Content-Type": "text/html" });
         // access http://localhost:5000/any
