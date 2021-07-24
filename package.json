@@ -1,0 +1,30 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "NodeJS learning course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shx99717/nodejs.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "NPM",
+    "Javascript"
+  ],
+  "author": "Raymond Shen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shx99717/nodejs/issues"
+  },
+  "homepage": "https://github.com/shx99717/nodejs#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
