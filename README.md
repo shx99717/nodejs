@@ -8,6 +8,7 @@
 * Packages get stored in the `node_module` folder
 * All dependencies are listed in a `package.json` file
 * NPM scripts can be created to run certain tasks such as run a server etc
+* Search 3rd party libraries from https://www.npmjs.com/
 
 ```javascript
 // Generates a package.json file
@@ -35,3 +36,7 @@ We do not ship the folder `node_modules` with the project, after checkout from t
 // Install all dependencies according to the package.json definition just like the pom.xml for maven
 npm install
 ```
+
+
+### Core modules shipped with NodeJS
+* https://nodejs.org/api/
