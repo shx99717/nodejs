@@ -4,7 +4,8 @@
   "description": "NodeJS learning course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node raw_httpserver.js",
+    "dev": "nodemon raw_httpserver.js"
   },
   "repository": {
     "type": "git",
