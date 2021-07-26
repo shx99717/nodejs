@@ -41,10 +41,18 @@ Great examples of popular global packages which you might know are
 * nodemon
 
 ## dependencies and devDependencies
+#### understanding of dependencies
+> Some good examples of dependencies which would be required at runtime include `React`, `Redux`, `Express`, and `Axios` etc...
+
+When you install an npm package using `npm install <package-name>`, you are installing it as a dependency.
+The package is automatically listed in the `package.json file`, under the dependencies
 
 
 #### understanding of devDependencies
 `dependencies` are required to run, `devDependencies` only to develop, e.g.: `unit tests`, `CoffeeScript to JavaScript transpilation`, `minification`, ...
+> Some good examples of when to install devDependencies would be `Nodemon`, `Babel`, `ESLint`, and testing frameworks like `Chai`, `Mocha`, `Enzyme`, etc...
+
+> Development dependencies are intended as development-only packages, that are unneeded in production. For example testing packages, webpack or Babel.
 
 If you are going to develop a package, you download it (e.g. via git clone), go to its root which contains package.json, and run:
 ```javascript
@@ -99,7 +107,12 @@ npm --version
 We do not ship the folder `node_modules` with the project, after checkout from the repo, type 
 ```javascript
 // Install all dependencies according to the package.json definition just like the pom.xml for maven
+// A.k.a installing packages from both dependencies and devDependencies
 npm install
+
+// To tell npm install packages only from dependenceis (not include devDependencies)
+npm install --production
+
 ```
 
 
