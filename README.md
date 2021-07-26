@@ -101,6 +101,17 @@ node --version
 
 // Get NPM version
 npm --version
+
+// NPM package runner
+// npx is a tool for running npm packages that
+// live inside of a local node_modules folder or
+// are not installed globally
+// Need to install serve package first
+npx serve
+// You can run code that sits in a GitHub gist, for example:
+npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32
+// This will work as package cowsay exists on NPM as well
+npx cowsay JavaScript FTW!
 ```
 
 
@@ -150,6 +161,11 @@ yarn cache clean [package]
 
 // rm -fr node_modules && npm install
 yarn upgrade
+
+// npm run [start|build|lint|format|test|..]
+// Run script [start|build|lint|format|test|..]
+// Run start script
+yarn run start
 ```
 
 
