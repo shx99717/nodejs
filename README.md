@@ -79,7 +79,7 @@ npm list -g --depth 0
 
 
 
-## Frequently used commands
+## Frequently used commands - NPM
 ```javascript
 // Generates a package.json file
 npm init
@@ -113,6 +113,43 @@ npm install
 // To tell npm install packages only from dependenceis (not include devDependencies)
 npm install --production
 
+```
+
+## Frequently used commands - YARN
+```javascript
+// Install yarn
+npm install --global yarn
+
+// Get yarn version
+yarn --version
+
+
+// npm install
+yarn add
+
+// npm install [package]
+yarn add [package]
+
+// npm install [package] --save-dev
+yarn add [package] --dev
+
+// npm install [package] --global
+yarn global add [package]
+
+// npm update --global
+yarn global upgrade
+
+// npm rebuild
+yarn add --force
+
+// npm uninstall [package]
+yarn remove [package]
+
+// npm cache clean
+yarn cache clean [package]
+
+// rm -fr node_modules && npm install
+yarn upgrade
 ```
 
 
