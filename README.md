@@ -143,6 +143,7 @@ yarn add [package]
 
 // npm install [package] --save-dev
 yarn add [package] --dev
+yarn add -D [package]
 
 // npm install [package] --global
 yarn global add [package]
