@@ -136,7 +136,7 @@ yarn --version
 
 
 // npm install
-yarn add
+yarn install
 
 // npm install [package]
 yarn add [package]
